@@ -20,15 +20,38 @@
             margin-bottom: 10px;
         }
 
+        h2 {
+            font-size: 20px;
+            margin: 50px 0 15px;
+        }
+
         p {
             color: #555;
             margin-bottom: 30px;
         }
 
-        video {
+        .explanation {
+            text-align: left;
+            max-width: 750px;
+            margin: 30px auto;
+            line-height: 1.6;
+        }
+
+        video,
+        figure img {
             width: 100%;
             max-width: 900px;
             height: auto;
+        }
+
+        figure {
+            margin: 40px 0;
+        }
+
+        figcaption {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
         }
     </style>
 </head>
@@ -45,6 +68,34 @@
         <source src="animation.mp4" type="video/mp4">
         Your browser does not support the video element.
     </video>
+
+    <div class="explanation">
+        <h2>About the measurement</h2>
+        <p>
+            Die Animation zeigt die relative Veränderung der Resistivität (in %)
+            im Vergleich zum Zustand vor der Beregnung.
+            Blaue Farbtöne weisen auf eine Abnahme der Resistivität hin, die hauptsächlich durch
+            einen steigenden Wassergehalt verursacht wird.
+            Rote Farbtöne weisen auf eine Zunahme des spezifischen Widerstands hin.
+
+        </p>
+        <p>
+            <!-- Hier eigene Infos ergänzen: Standort, Elektrodenanordnung, Messintervall, Bewässerungsmenge ... -->
+        </p>
+    </div>
+
+    <figure>
+        <img src="plot1.png" alt="Plot 1">
+        <figcaption>Abbildung 1: Position der 2D Schnitte im 3D Modell </figcaption>
+    </figure>
+
+    <figure>
+        <img src="plot2.png" alt="Plot 2">
+        <figcaption>Schnitte durch das 3D-Modell für die Zeitschritte während der Beregnung.  
+            Dargestellt ist die prozentuale Verän-derung der Resistivität im Vergleich zum Referenzmodell. 
+            Blaue Bereiche kennzeichnen eine Abnahme der Resistivität im Vergleich zum Modell vor der Beregnung. 
+            Die Tiefenangaben (z) beziehen sich auf den höchsten Punkt des Modells</figcaption>
+    </figure>
 
 </body>
 </html>
